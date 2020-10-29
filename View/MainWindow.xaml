@@ -20,8 +20,17 @@
     <Grid DataContext="{Binding Source={StaticResource PersonViewModel}}" Margin="20" Background="LightGray" >
         <Grid.RowDefinitions>
             <RowDefinition Height=" Auto"/>
+            <RowDefinition Height=" 5"/>
             <RowDefinition Height=" Auto"/>
+            <RowDefinition Height=" 5"/>
             <RowDefinition Height=" Auto"/>
+            <RowDefinition Height=" 5"/>
+            <RowDefinition Height=" Auto"/>
+            <RowDefinition Height=" 5"/>
+            <RowDefinition Height=" Auto"/>
+            <RowDefinition Height=" 5"/>
+            <RowDefinition Height=" Auto"/>
+            <RowDefinition Height=" 5"/>
             <RowDefinition Height=" Auto"/>
             <RowDefinition Height=" *"/>
         </Grid.RowDefinitions>
@@ -32,10 +41,10 @@
 
         <TextBlock Grid.Row="0" Grid.Column="0" Text="First Name" HorizontalAlignment="Center" />
         <TextBox Grid.Row=" 0" Grid.Column="1" Width=" 100" HorizontalAlignment="Center" Text="{Binding Person.FName, Mode=TwoWay }"/>
-        <TextBlock Grid.Row="1" Grid.Column="0" Text="Last Name" HorizontalAlignment="Center" />
-        <TextBox Grid.Row="1" Grid.Column="1" Width=" 100" HorizontalAlignment="Center" Text="{Binding Person.LName, Mode=TwoWay }"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Last Name" HorizontalAlignment="Center" />
+        <TextBox Grid.Row="2" Grid.Column="1" Width=" 100" HorizontalAlignment="Center" Text="{Binding Person.LName, Mode=TwoWay }"/>
 
-        <Button Content="Submit" Command="{Binding SubmitCommand}" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" Margin="327,0,326,0" />
+        <Button Content="Submit" Command="{Binding SubmitCommand}" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Margin="327,0,326,0" />
 
         <ListView ItemsSource="{Binding Persons}" Grid.Row="3" Grid.Column="1" Width="Auto">
             <ListView.View>
